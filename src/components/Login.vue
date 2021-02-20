@@ -1,8 +1,8 @@
 <template>
- <div class="">
-    <v-card width="400" class="mx-auto mt-5">
+ <div class="container mt-5">
+    <v-card width="400" class="mx-auto my-10">
     <v-card-title>
-      <h1 class="display-1">Login</h1>
+      Login
     </v-card-title>
     <v-card-text>
       <v-form>
@@ -39,4 +39,10 @@ data:()=>({
   }
 </script>
 
-style
+<style  scoped>
+.v-sheet--offset{
+  top: -24px;
+  position: relative;
+  
+}
+</style>

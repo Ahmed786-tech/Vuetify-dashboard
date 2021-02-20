@@ -2,9 +2,11 @@
     <div>
 <v-dialog v-model="dialog"
     
-      max-width="500"
+      max-width="600"
       
     >
+
+    
       <template v-slot:activator="{ on, attrs }">
         <v-btn
         flat
@@ -17,12 +19,18 @@
         </v-btn>
       </template>
 
-      <v-card>
-        <v-card-title class="headline grey lighten-2">
-          <h2>Add a new project</h2>
+      <v-card class="" >
+
+<v-card-title class="headline grey lighten-2">
+          <h2 class="">Add a new project</h2>
         </v-card-title>
+        
             <v-card-text>
-                <v-form ref="form">
+
+              
+                <v-form  ref="form">
+
+
                     <v-text-field label="Title" v-model="title" prepend-icon="mdi-folder" :rules="titleRules">
                     </v-text-field>
                     <v-text-field label="Person" v-model="person" prepend-icon="mdi-human" :rules="titleRules"></v-text-field>
@@ -108,6 +116,10 @@ import db from '../fb'
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style  scoped>
+/* .v-sheet--offset{
+  top: -24px;
+  position: relative;
+  
+} */
 </style>

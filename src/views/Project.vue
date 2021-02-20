@@ -45,7 +45,7 @@
     </template>
   </v-simple-table></v-card> -->
 
-           <v-card  class="pl-5" >
+           <v-card hover  class="pl-5" >
         <v-row wrap :class="`pa-3 project ${project.status}`">
           <v-col xs12 md6>
             <div class="caption grey--text">Project Title</div>
@@ -62,7 +62,7 @@
           
            <v-col xs2 sm4 md2>
              <div class="right">
-              <v-chip  small :class="`${project.status}  `">{{ project.status }}</v-chip>
+              <v-chip color="cyan" small :class="`${project.status}  `">{{ project.status }}</v-chip>
                </div>
           </v-col>
         </v-row>
@@ -101,4 +101,20 @@ import db from '../fb'
     }
     }
 </script>
+
+<style  scoped>
+.v-chip.compelete {
+border: 2px solid rgb(56, 50, 50);
+
+
+
+}
+.v-chip.overdue {
+border: 2px solid #3cd1c2;
+
+}
+.v-chip.ongoing {
+border: 2px solid tomato;
+}
+</style>
 

@@ -1,24 +1,30 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Dashboard1 from '../views/Dashboard1.vue'
+import Dashboard from '../views/Dashboard.vue'
 import register from '../components/register.vue'
 import Login from '../components/Login.vue'
-import Dashboard from '../components/Dashboard.vue'
+import Table1 from '../components/Table1.vue'
 import Drawer from '../components/Drawer.vue'
 import Team from '../views/Team.vue'
+import Table from '../views/Table.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Dashboard1',
-    component: Dashboard1
+    name: 'Dashboard',
+    component: Dashboard
   },
   {
     path: '/login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/Table',
+    name: 'Table',
+    component: Table
   },
   {
     path: '/Project',
@@ -39,9 +45,9 @@ const routes = [
     component: register
   },
   {
-    path: '/Dashboard',
-    name: 'Dashboard',
-    component: Dashboard
+    path: '/Table1',
+    name: 'Table1',
+    component: Table1
   },
   {
     path: '/Drawer',

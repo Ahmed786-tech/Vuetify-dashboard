@@ -1,14 +1,21 @@
 <template>
-  <v-container class="mt-5">
+  <v-container class=" container mt-5">
+
     <v-row v-resize="onResize" align="center" justify="center">
       <v-col
       cols="12"
+      lg="7"
       sm="8"
-      class="mx-auto"
+      class=""
       >
-        <h1>Sign Up</h1>
-        <v-form ref="signUpForm" v-model="formValidity" >
-          <v-text-field label="Email" type="email" v-model="email" :rules="emailRules" required>
+      <v-card class="px-0" elevation="0" outlined>
+        <v-card-title class="mx-5" primary-title>
+          Register yourself
+        </v-card-title>
+        <v-form class="ma-10 mt-5" ref="signUpForm" v-model="formValidity" >
+          <v-text-field dense label="Name" type="name" v-model="email" :rules="emailRules" required>
+          </v-text-field>
+          <v-text-field  label="Email" type="email" v-model="email" :rules="emailRules" required>
           </v-text-field>
           <v-autocomplete label="which browser do you use" :items="browser">
           </v-autocomplete>
@@ -33,18 +40,20 @@
 
           <v-checkbox label="Agree to terms and conditions" v-model="agreeToTerms" :rules="agreeToTermsRules" required>
           </v-checkbox>
-          <v-btn class="mr-3" type="submit" color="primary" :disabled="!formValidity">submit</v-btn>
+          <v-btn elevation="0" class="mr-3 mb-5 text-capitalize" type="submit" color="primary" :disabled="!formValidity">submit</v-btn>
 
-          <v-btn class="mr-3" color="success" @click="validateForm">Validate Form</v-btn>
+          <v-btn elevation="0" class="mr-3 mb-5 text-capitalize" color="success" @click="validateForm">Validate Form</v-btn>
 
-          <v-btn class="mr-3"  color="warning" @click="resetValidation">Reset Validation</v-btn>
-          <v-btn  color="error" @click="resetForm">Reset</v-btn>
+          <v-btn elevation="0" class="mr-3 mb-5 text-capitalize"  color="warning" @click="resetValidation">Reset Validation</v-btn>
+          <v-btn elevation="0"  class="mb-5 text-capitalize" color="error" @click="resetForm">Reset</v-btn>
 
 
 
         </v-form>
+        </v-card>
       </v-col>
     </v-row>
+    
   </v-container>
 </template>
 
@@ -87,5 +96,9 @@
 </script>
 
 <style  scoped>
-
+.v-sheet--offset{
+  top: -24px;
+  position: relative;
+  
+}
 </style>
