@@ -2,7 +2,7 @@
     <div class="Team">
    
     <v-container id="" class="my-5">
-         <h1 class="subheading grey--text">Team</h1>
+         <h1 class="subheading font-weight-regular">Team</h1>
 <v-row >
 <v-col class="12" md="3" lg="3"  v-for="person in team" :key="person.name">
 <v-card hover >

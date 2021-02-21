@@ -17,7 +17,7 @@
         prepend-icon="mdi-lock" 
         :append-icon=" showPassword ? 'mdi-eye' : 'mdi-eye-off'"
         @click:append="showPassword = !showPassword"
-        ></v-text-field>
+        ></v-text-field>  
       </v-form>
     </v-card-text>
     <v-card-actions>

@@ -340,7 +340,7 @@
           <v-list dense tile>
             <v-list-item dense>
               <v-list-item-avatar>
-                <v-img src="/avatar1.png"></v-img>
+                <v-img src="../../public/images/avatar1.png"></v-img>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title>Maan Khan</v-list-item-title>

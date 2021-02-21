@@ -59,9 +59,9 @@
           </v-btn>
         </template>
         <v-card width="300">
-          <v-card-title class="grey lighten-3 d-flex justify-center py-1">
+          <!-- <v-card-title class="grey lighten-3 d-flex justify-center py-1">
             <h5 class="font-weight-regular">{{name}}</h5>
-          </v-card-title>
+          </v-card-title> -->
           <v-card-title class="d-flex justify-center">
             <v-card
               class="d-flex justify-center align-center"
