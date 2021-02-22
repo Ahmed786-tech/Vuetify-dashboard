@@ -267,6 +267,11 @@ export default {
         text: "Sign Up",
         route: "/register",
       },
+      {
+        icon: "mdi-account-plus",
+        text: "Sign Up",
+        route: "/signUp",
+      },
     ],
     snackbar: false,
   }),

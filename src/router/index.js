@@ -4,7 +4,7 @@ import Dashboard from '../views/Dashboard.vue'
 import register from '../components/register.vue'
 import Login from '../components/Login.vue'
 import Table1 from '../components/Table1.vue'
-import Drawer from '../components/Drawer.vue'
+import signUp from '../components/signUp.vue'
 import Team from '../views/Team.vue'
 import Table from '../views/Table.vue'
 
@@ -50,9 +50,9 @@ const routes = [
     component: Table1
   },
   {
-    path: '/Drawer',
-    name: 'Drawer',
-    component: Drawer
+    path: '/signUp',
+    name: 'signUp',
+    component: signUp
   },
  
 ]
