@@ -86,7 +86,7 @@
               <v-file-input
               v-model="file"
                @change="onFileChange"
-              class=" mb-3 ml-2"
+              class="my-n9 ml-3"
     :rules="rules"
     accept="image/png, image/jpeg, image/bmp"
    absolute

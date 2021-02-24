@@ -26,8 +26,8 @@
 </v-card>
 </v-col>
 </v-row>
-jdhjfhj{{count}}
-<v-btn @click="name1" color="success">text</v-btn>
+<!-- jdhjfhj{{count}}
+<v-btn @click="name1" color="success">text</v-btn> -->
     </v-container>
   </div>
 </template>
