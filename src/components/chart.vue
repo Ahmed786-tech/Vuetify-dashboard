@@ -15,6 +15,132 @@
         </ejs-accumulationchart>
     </div>
     </v-col> </v-row>
+    <v-row>
+      <v-col cols="6">
+<v-card
+    class=""
+elevation=""
+    max-width=""
+  >
+  <v-sheet color="primary"
+  elevation="1"
+  height="120"
+  width="100%"
+>
+
+      
+              <v-avatar class="mt-10 ml-5"  size="110" color="pink">
+                <img src="../../public/images/girlpng.png" alt="" />
+              </v-avatar>
+               
+      
+  </v-sheet>
+  
+    <v-card-text>
+       <v-list two-line>
+      <v-list-item>
+        <v-list-item-icon>
+          <v-icon color="indigo">
+            mdi-phone
+          </v-icon>
+        </v-list-item-icon>
+
+        <v-list-item-content>
+          <v-list-item-title>(650) 555-1234</v-list-item-title>
+          <v-list-item-subtitle>Mobile</v-list-item-subtitle>
+        </v-list-item-content>
+
+        <v-list-item-icon>
+          <v-icon>mdi-message-text</v-icon>
+        </v-list-item-icon>
+      </v-list-item>
+
+      <v-list-item>
+        <v-list-item-action></v-list-item-action>
+
+        <v-list-item-content>
+          <v-list-item-title>(323) 555-6789</v-list-item-title>
+          <v-list-item-subtitle>Work</v-list-item-subtitle>
+        </v-list-item-content>
+
+        <v-list-item-icon>
+          <v-icon>mdi-message-text</v-icon>
+        </v-list-item-icon>
+      </v-list-item>
+
+      <v-divider inset></v-divider>
+
+      <v-list-item>
+        <v-list-item-icon>
+          <v-icon color="indigo">
+            mdi-email
+          </v-icon>
+        </v-list-item-icon>
+
+        <v-list-item-content>
+          <v-list-item-title>aliconnors@example.com</v-list-item-title>
+          <v-list-item-subtitle>Personal</v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-list-item>
+        <v-list-item-action></v-list-item-action>
+
+        <v-list-item-content>
+          <v-list-item-title>ali_connors@example.com</v-list-item-title>
+          <v-list-item-subtitle>Work</v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider inset></v-divider>
+
+      <v-list-item>
+        <v-list-item-icon>
+          <v-icon color="indigo">
+            mdi-map-marker
+          </v-icon>
+        </v-list-item-icon>
+
+        <v-list-item-content>
+          <v-list-item-title>1400 Main Street</v-list-item-title>
+          <v-list-item-subtitle>Orlando, FL 79938</v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
+    </v-card-text>
+    <v-card-actions>
+      <v-btn
+        class="text-capitalize"
+        color="info"
+      >
+       view profile
+      </v-btn>
+       <v-btn
+        class="text-capitalize"
+        color="yellow"
+      >
+       send message
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+      </v-col>
+    </v-row>
+<v-row>
+  <v-col cols="8">
+ <div class="control-section">
+    <div align='center'>
+        <ejs-chart style='display:block' :theme='theme' align='center' id='chartcontainer' :title='title' :primaryXAxis='primaryXAxis'
+         :primaryYAxis='primaryYAxis' :chartArea='chartArea' :width='width' :tooltip='tooltip' :load='load'>
+            <e-series-collection>
+                <e-series :dataSource='seriesData' type='Column' xName='x' yName='y' name='Gold' width=2 :marker='marker'> </e-series>
+                <e-series :dataSource='seriesData1' type='Column' xName='x' yName='y' name='Silver' width=2 :marker='marker'> </e-series>
+                <e-series :dataSource='seriesData2' type='Column' xName='x' yName='y' name='Bronze' width=2 :marker='marker'> </e-series>
+            </e-series-collection>
+        </ejs-chart>
+    </div>
+</div>
+</v-col>
+</v-row>
 </div>
 
 </template>
