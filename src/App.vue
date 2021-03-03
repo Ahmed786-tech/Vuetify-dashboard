@@ -225,7 +225,7 @@ export default {
     text11: null,
     url: null,
     file: null,
-    Drawer: true,
+    Drawer: false,
     showimage: false,
     name:'',
     readonly: true,

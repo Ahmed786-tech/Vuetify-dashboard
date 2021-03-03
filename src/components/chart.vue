@@ -1,22 +1,18 @@
 <template>
 
 
-  <div class="control-section">
-      <v-row> <v-col cols="4">
-          
-    <div align='center'>
-        <ejs-accumulationchart style='display:block' :theme='theme' align='center' id='chartcontainer' :title='title' :primaryXAxis='primaryXAxis' :primaryYAxis='primaryYAxis'
-            :chartArea='chartArea' :legendSettings='legendSettings' :tooltip='tooltip'>
-            <e-accumulation-series-collection>
-                <e-accumulation-series :dataSource='seriesData' radius='70%' xName='x' yName='y' startAngle=0 :dataLabel='dataLabel'
-                  endAngle=360 innerRadius='40%' name='Project'  explode=true explodeOffset='10%' :explodeIndex='explodeIndex'> </e-accumulation-series>
-             
-            </e-accumulation-series-collection>
-        </ejs-accumulationchart>
-    </div>
-    </v-col> </v-row>
-    <v-row>
-      <v-col cols="6">
+  <div >
+
+<v-row>
+  <v-col cols="12">
+   
+  </v-col>
+</v-row>
+
+      <v-row>
+        
+        
+        <v-col cols="4">
 <v-card
     class=""
 elevation=""
@@ -37,7 +33,7 @@ elevation=""
   </v-sheet>
   
     <v-card-text>
-       <v-list two-line>
+       <v-list class="mt-5">
       <v-list-item>
         <v-list-item-icon>
           <v-icon color="indigo">
@@ -50,25 +46,10 @@ elevation=""
           <v-list-item-subtitle>Mobile</v-list-item-subtitle>
         </v-list-item-content>
 
-        <v-list-item-icon>
-          <v-icon>mdi-message-text</v-icon>
-        </v-list-item-icon>
+       
       </v-list-item>
 
-      <v-list-item>
-        <v-list-item-action></v-list-item-action>
-
-        <v-list-item-content>
-          <v-list-item-title>(323) 555-6789</v-list-item-title>
-          <v-list-item-subtitle>Work</v-list-item-subtitle>
-        </v-list-item-content>
-
-        <v-list-item-icon>
-          <v-icon>mdi-message-text</v-icon>
-        </v-list-item-icon>
-      </v-list-item>
-
-      <v-divider inset></v-divider>
+      <v-divider ></v-divider>
 
       <v-list-item>
         <v-list-item-icon>
@@ -83,16 +64,8 @@ elevation=""
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item>
-        <v-list-item-action></v-list-item-action>
 
-        <v-list-item-content>
-          <v-list-item-title>ali_connors@example.com</v-list-item-title>
-          <v-list-item-subtitle>Work</v-list-item-subtitle>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-divider inset></v-divider>
+      <v-divider ></v-divider>
 
       <v-list-item>
         <v-list-item-icon>
@@ -123,31 +96,31 @@ elevation=""
       </v-btn>
     </v-card-actions>
   </v-card>
-      </v-col>
-    </v-row>
-<v-row>
-  <v-col cols="8">
- <div class="control-section">
+      </v-col>  <v-col cols="4">
+          <v-card>
     <div align='center'>
-        <ejs-chart style='display:block' :theme='theme' align='center' id='chartcontainer' :title='title' :primaryXAxis='primaryXAxis'
-         :primaryYAxis='primaryYAxis' :chartArea='chartArea' :width='width' :tooltip='tooltip' :load='load'>
-            <e-series-collection>
-                <e-series :dataSource='seriesData' type='Column' xName='x' yName='y' name='Gold' width=2 :marker='marker'> </e-series>
-                <e-series :dataSource='seriesData1' type='Column' xName='x' yName='y' name='Silver' width=2 :marker='marker'> </e-series>
-                <e-series :dataSource='seriesData2' type='Column' xName='x' yName='y' name='Bronze' width=2 :marker='marker'> </e-series>
-            </e-series-collection>
-        </ejs-chart>
+        <ejs-accumulationchart style='display:block' :theme='theme' align='center' id='chartcontainer' :title='title' :primaryXAxis='primaryXAxis' :primaryYAxis='primaryYAxis'
+            :chartArea='chartArea' :legendSettings='legendSettings' :tooltip='tooltip'>
+            <e-accumulation-series-collection>
+                <e-accumulation-series :dataSource='seriesData' radius='70%' xName='x' yName='y' startAngle=0 :dataLabel='dataLabel'
+                  endAngle=360 innerRadius='40%' name='Project'  explode=true explodeOffset='10%' :explodeIndex='explodeIndex'> </e-accumulation-series>
+             
+            </e-accumulation-series-collection>
+        </ejs-accumulationchart>
     </div>
-</div>
-</v-col>
-</v-row>
+    </v-card>
+    </v-col>
+   
+    
+     </v-row>
+    
+
 </div>
 
 </template>
-<style scoped>
 
-</style>
 <script>
+// import chart2 from '../components/chart2.vue'
 import Vue from "vue";
 import { Browser } from '@syncfusion/ej2-base';
 import { AccumulationChartPlugin, PieSeries, AccumulationLegend, AccumulationDataLabel, AccumulationTooltip } from "@syncfusion/ej2-vue-charts";
@@ -157,6 +130,7 @@ selectedTheme = selectedTheme ? selectedTheme : "Material";
 let theme = (selectedTheme.charAt(0).toUpperCase() + selectedTheme.slice(1)).replace(/-dark/i, "Dark");
 
 export default {
+  components:{},
   data: function() {
     return {
          theme:theme,
